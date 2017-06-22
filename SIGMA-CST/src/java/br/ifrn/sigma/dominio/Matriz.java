@@ -9,7 +9,7 @@ public class Matriz {
 	private boolean ativa;
 	private Curso curso;
 	private List<Diretoria> diretorias;
-	private List<ComponenteCurricular> componentesCurriculares;
+	private List<Componente> componentesCurriculares;
 
 	public Matriz() {
 		super();
@@ -55,11 +55,11 @@ public class Matriz {
 		this.diretorias = diretorias;
 	}
 
-	public List<ComponenteCurricular> getComponentesCurriculares() {
+	public List<Componente> getComponentesCurriculares() {
 		return componentesCurriculares;
 	}
 
-	public void setComponentesCurriculares(List<ComponenteCurricular> componentesCurriculares) {
+	public void setComponentesCurriculares(List<Componente> componentesCurriculares) {
 		this.componentesCurriculares = componentesCurriculares;
 	}
 }

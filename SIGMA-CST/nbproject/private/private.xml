@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/matrizCurricular/negocio/NegMatriz.java</file>
+            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/app/matrizes/web/MatrizServlet.java</file>
             <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/web/index.html</file>
-            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/matrizCurricular/apresentacao/SrvMatriz.java</file>
+            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/app/componentes/persistencia/ComponenteDAO.java</file>
+            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/app/matrizes/negocio/MatrizImpl.java</file>
+            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/app/matrizes/persistencia/MatrizDAO.java</file>
+            <file>file:/C:/Users/Yuri/Documents/NetBeansProjects/SIGMA-CST/src/java/br/ifrn/sigma/dominio/Componente.java</file>
         </group>
     </open-files>
 </project-private>
