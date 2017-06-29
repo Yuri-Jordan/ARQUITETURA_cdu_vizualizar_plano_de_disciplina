@@ -1,4 +1,4 @@
-package br.ifrn.sigma.matrizCurricular.apresentacao;
+package br.ifrn.sigma.app.matrizes.web;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.ifrn.sigma.dominio.Matriz;
-import br.ifrn.sigma.app.matrizes.negocio.NegMatriz;
+import br.ifrn.sigma.app.matrizes.negocio.MatrizImpl;
 
 @WebServlet("/SrvMatriz")
 public class SrvMatriz extends HttpServlet {
@@ -28,7 +28,7 @@ public class SrvMatriz extends HttpServlet {
         if (id != null && !id.isEmpty()) {
 
             // Instancia a classe de negócio
-            NegMatriz negocio = new NegMatriz();
+            MatrizImpl negocio = new MatrizImpl();
             try {
                 idCurso = Integer.parseInt(id);
             } catch (NumberFormatException nfex) {
