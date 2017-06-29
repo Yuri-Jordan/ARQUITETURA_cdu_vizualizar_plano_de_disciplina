@@ -25,5 +25,22 @@ public class MatrizImpl {
         // Retorna a matriz curricular
         return matriz;
     }
+    
+    public Componente getEmenta(int idDisciplina) {
 
+        // Instancia as classes de acesso a dados 
+        MatrizDAO matrizDao = new MatrizDAO();
+        Componente componente = new Componente();
+        ComponenteDAO prsComponente = new ComponenteDAO();
+
+        // Recupera a matriz curricular
+        Matriz matriz = matrizDao.getMatriz(idDisciplina);
+
+        // Recupera, na sequência, a lista de componentes curriculares associados
+        String ementa = prsComponente.getEmenta(idDisciplina);
+        componente.setEmenta(ementa);
+
+        // Retorna a matriz curricular
+        return componente;
+    }
 }

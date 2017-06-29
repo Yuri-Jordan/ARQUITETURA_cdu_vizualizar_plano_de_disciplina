@@ -34,5 +34,23 @@ public class ComponenteDAO extends DAO{
         }
         return null;
     }
-    //implementação do metodo de recuperação do pdf do banco
+    
+    public String getEmenta(int id) {
+        if (con != null) {
+            try {
+                PreparedStatement stGetComponentes = con.prepareStatement("SELECT ementa FROM componente_curricular WHERE id = ? ORDER BY semestre");
+                stGetComponentes.setInt(1, id);
+                ResultSet rsComponentes = stGetComponentes.executeQuery();                
+                while (rsComponentes.next()) {
+                    Componente cmp = new Componente();                                                            
+                    cmp.setEmenta(rsComponentes.getString("ementa"));                                        
+                    return cmp.getEmenta();
+                }
+                
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
 }
