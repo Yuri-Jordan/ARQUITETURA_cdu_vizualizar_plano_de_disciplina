@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.ifrn.sigma.app.matrizes.negocio.MatrizImpl;
 import br.ifrn.sigma.dominio.Matriz;
 
-@WebServlet("/SrvMatriz")
+@WebServlet("/matrizServlet")
 public class MatrizServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;

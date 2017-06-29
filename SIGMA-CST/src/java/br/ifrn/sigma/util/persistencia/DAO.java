@@ -12,8 +12,8 @@ import java.sql.Connection;
  * @author Yuri
  */
 public abstract class DAO {  
-    protected Connection con;
+    public Connection con = new FabricaConexao().getConexao();
     public Connection getConection(){
-        return this.con;
+        return con;
     }     
 }

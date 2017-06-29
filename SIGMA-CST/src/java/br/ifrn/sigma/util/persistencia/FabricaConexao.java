@@ -19,14 +19,14 @@ import java.util.logging.Logger;
  *
  * @author Yuri
  */
-public class FabricaConexao extends DAO{
+public class FabricaConexao{
     private static final long serialVersionUID = 1L;                    
     
     protected static final String JDBC_DRIVER = "org.postgresql.Driver";
     protected static final String BANCO = "jdbc:postgresql://localhost:5432/Sigma";
     
     protected static final String USER = "postgres";
-    protected static final String PASS = "15147";
+    protected static final String PASS = "senha";
     
     protected Statement consulta;
     protected ResultSet resultado;

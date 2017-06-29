@@ -1,7 +1,5 @@
 package br.ifrn.sigma.app.componentes.persistencia;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,7 +17,7 @@ public class ComponenteDAO extends DAO{
                 PreparedStatement stGetComponentes = con.prepareStatement("SELECT * FROM componente_curricular WHERE id_matriz = ? ORDER BY semestre");
                 stGetComponentes.setInt(1, id);
                 ResultSet rsComponentes = stGetComponentes.executeQuery();
-                List<Componente> lista = new ArrayList<Componente>();
+                List<Componente> lista = new ArrayList<>();
                 while (rsComponentes.next()) {
                     Componente cmp = new Componente();
                     cmp.setId(rsComponentes.getInt("id"));

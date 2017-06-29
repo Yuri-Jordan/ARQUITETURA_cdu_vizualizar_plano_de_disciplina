@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="br.ifrn.sigma.dominio.Matriz, br.ifrn.sigma.dominio.ComponenteCurricular"%>
+    pageEncoding="UTF-8" import="br.ifrn.sigma.dominio.Matriz, br.ifrn.sigma.dominio.Componente"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -22,7 +22,7 @@
 		<th>Hora</th>
 	</tr>
 <%	int semestreAtual = -1;
-	for (ComponenteCurricular cmp : matriz.getComponentesCurriculares() ) { 
+	for (Componente cmp : matriz.getComponentesCurriculares() ) { 
 		if (cmp.getSemestre() > semestreAtual) {
 			out.println("<th colspan=\"4\">"+cmp.getSemestre()+"º SEMESTRE</th>");
 			semestreAtual = cmp.getSemestre();
