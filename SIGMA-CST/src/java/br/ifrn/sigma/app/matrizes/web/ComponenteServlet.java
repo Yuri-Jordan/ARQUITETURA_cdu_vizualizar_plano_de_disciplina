@@ -40,7 +40,7 @@ public class ComponenteServlet extends HttpServlet {
 
             try {
                 Componente retorno = negocio.getEmenta(idDisciplina);
-                
+                System.out.println(retorno.toString());
                 // Armazena o resultado como atributo da requisição
                 request.setAttribute("componente", retorno);
 

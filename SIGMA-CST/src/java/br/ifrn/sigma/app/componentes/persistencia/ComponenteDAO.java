@@ -53,4 +53,22 @@ public class ComponenteDAO extends DAO{
         }
         return null;
     }
+    public String getNome(int id) {
+        if (con != null) {
+            try {
+                PreparedStatement stGetComponentes = con.prepareStatement("SELECT nome FROM componente_curricular WHERE id = ? ORDER BY semestre");
+                stGetComponentes.setInt(1, id);
+                ResultSet rsComponentes = stGetComponentes.executeQuery();                
+                while (rsComponentes.next()) {
+                    Componente cmp = new Componente();                                                            
+                    cmp.setEmenta(rsComponentes.getString("nome"));                                        
+                    return cmp.getEmenta();
+                }
+                
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
 }

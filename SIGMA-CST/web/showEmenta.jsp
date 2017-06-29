@@ -16,22 +16,22 @@
         <%
             Componente comp = (Componente) request.getAttribute("componente");
         %>
-        <h2><%= comp.getEmenta()%></h2>
+        <h2><%= comp.getNome()%></h2>
         
 
-        <h3>Componentes Curriculares por Semestres</h3>
+        <h3>Ementa de disciplina</h3>
         <table border="1">
             <tr>
                 <th>Nome do componente curricular</th>
-                <th>Créditos</th>
-                <th>Hora-aula</th>
-                <th>Hora</th>
+                <th>Conteúdo</th>
+
             </tr>
             <%	
                         out.println("<th colspan=\"4\">EMENTA</th>");
                 
             %>
             <tr>
+                <td><%= comp.getNome()%></td>
                 <td><%= comp.getEmenta()%></td>
 <!--                <td><= comp.getCreditos()%></td>
                 <td><= comp.getHoraAula()%></td>

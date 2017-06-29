@@ -39,8 +39,12 @@ public class MatrizImpl {
         // Recupera, na sequência, a lista de componentes curriculares associados
         String ementa = prsComponente.getEmenta(idDisciplina);
         componente.setEmenta(ementa);
-
-        // Retorna a matriz curricular
+        if (ementa == null){
+            return null;
+        }
+        String nome = prsComponente.getNome(idDisciplina);
+        componente.setNome(nome);
+        // Retorna o componente curricular
         return componente;
     }
 }
